@@ -47,7 +47,7 @@
   overflow-x: hidden;
 }
 .bg-var::before{
-  background-color: #001133;
+  background-color: #000;
 }
 body {
   background:var(--bg1);
@@ -61,7 +61,7 @@ a{
 :root {
   
   --color: #fff;
-  --bg1:#001133;
+  --bg1:#000;
   --pink: #d6496a;
 }
 
@@ -71,7 +71,7 @@ nav {
   display: flex;
   height: 60px;
   width: 100%;
- background:#001133;
+ background:#000;
  border-bottom: 1px solid  var(--color);
   align-items: center;
   justify-content: space-between;
@@ -86,7 +86,7 @@ nav .logo {
   font-weight: 600;
 }
 .logo span{
-  color: #00ff76;
+  color: #286BCE;
 }
 
 nav ul {
@@ -115,7 +115,7 @@ nav ul li a:before {
   bottom: 0px;
   height: 3px;
   width: 100%;
-  background: #00ff76;
+  background: #286BCE;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .3s linear;
@@ -140,12 +140,12 @@ input[type="checkbox"] {
 }
 
 /* the banner section */
-.banner-section {
+/* .banner-section {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .background-clip {
   position: absolute;
@@ -172,14 +172,14 @@ input[type="checkbox"] {
     margin-left: 0;
   }
 }
-.overlay {
+/* .overlay {
   width: 100%;
   height: 760px;
   position: absolute;
   top: 0;
   left: 0;
  background: #001133;
-}
+} */
 
 .content {
   text-align: center;
@@ -208,7 +208,7 @@ input[type="checkbox"] {
   height: 50px;
   border: none;
   border-radius: 5px;
-  background:#00ff76;
+  background:#286BCE;
 }
 
 .b button {
@@ -222,7 +222,7 @@ input[type="checkbox"] {
 }
 
 .type {
-  background: linear-gradient(90deg,#ffffff, #00ff76 );
+  background:#286BCE;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -252,13 +252,14 @@ input[type="checkbox"] {
   gap: 40px;
 }
 .about-content h2{
-  color: #00ff76;
+  color:#286BCE ;
 }
 .about-img{
   width: 450px;
   height:450px;
-  border:10px solid #00ff76;
+  border:10px solid #286BCE;
   border-radius: 40px 70px 30px 30px;
+  overflow: hidden;
 }
 .about-img img {
   width: 450px;
@@ -387,7 +388,7 @@ p{
   gap: 5px;
 }
 .porfolio-text h2{
-color: #00ff76;
+color:#286BCE;
 }
 .porfolio-content{
   display: flex;
@@ -461,7 +462,7 @@ margin-top: 22vh;
   color: var(--color);
 }
 .contact-text h2{
-  color: #00ff76;
+  color:#286BCE;
 }
 .info-left a{
   color: var(--color);
@@ -534,18 +535,17 @@ margin-top: 22vh;
     .over{
       overflow-y: hidden;
     }
-  .background-clip {
+  /* .background-clip {
     width: 100%;
     height: 200vh;
     object-fit: cover;
-  }
- 
-  .overlay {
-    object-fit: cover;
-    height: 125vh;
-  }
+  } */
+.over{
+  overflow-y: hidden;
+}
+  
   .btn button{
-    width: 362px;
+    width: 300px;
   }
 
   .content h1 {
@@ -554,14 +554,16 @@ margin-top: 22vh;
   .banner-btn{
     flex-direction: column;
   }
-
+  .overlay{
+    margin-top: -40px;
+  }
   /* about section */
   .about {
     margin-top: 70px;
   }
   .about-text p{
     white-space: nowrap;
-    font-size: 13px;
+    font-size: 16px;
     margin-left: 1px;
   }
   .about-img{
@@ -591,6 +593,9 @@ margin-top: 22vh;
   }
   .grid img{
     width: 100%;
+  }
+  .contact-text{
+    margin-left: -85px;
   }
 }
 
@@ -628,7 +633,8 @@ margin-top: 22vh;
     flex-direction: column;
   }
   .btn button{
-    width: 362px;
+    width: 300px;
+    margin-top: 5px;
   }
 
   /* about section */
@@ -637,7 +643,7 @@ margin-top: 22vh;
   }
   .about-text p{
     white-space: nowrap;
-    font-size: 13px;
+    font-size: 16px;
     margin-left: 1px;
   }
   .about-img{
@@ -645,6 +651,9 @@ margin-top: 22vh;
     height: 380px;
     border-radius: 40px 70px 35px 35px;
 
+  }
+  .wide br{
+    display: none;
   }
   .about-img img{
     width: 350px;
@@ -669,7 +678,9 @@ margin-top: 22vh;
   .grid img{
     width: 100%;
   }
-  
+  .contact-text{
+    margin-left: -125px;
+  }
 }
 
 /* the testimomial section */
@@ -705,6 +716,7 @@ margin-top: 22vh;
   .btn button{
     width: 362px;
   }
+ 
 }
 @media(min-width:50rem){
   .grid{
