@@ -62,7 +62,7 @@ a{
   
   --color: #fff;
   --bg1:#000;
-  --pink: #d6496a;
+  --blu:#0064f8;
 }
 
 /* the navbar section */
@@ -86,7 +86,7 @@ nav .logo {
   font-weight: 600;
 }
 .logo span{
-  color: #286BCE;
+  color:var(--blu);
 }
 
 nav ul {
@@ -115,7 +115,7 @@ nav ul li a:before {
   bottom: 0px;
   height: 3px;
   width: 100%;
-  background: #286BCE;
+  background:var(--blu);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .3s linear;
@@ -208,12 +208,18 @@ input[type="checkbox"] {
   height: 50px;
   border: none;
   border-radius: 5px;
-  background:#286BCE;
+  background:var(--blu);
 }
 
 .b button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--color);
+}
+.b:hover{
+  background-color:var(--blu);
+  transition: 2s;
+  border:1ps solid var(--bg1);
+  border-radius: 5px;
 }
 
 .content p {
@@ -222,7 +228,7 @@ input[type="checkbox"] {
 }
 
 .type {
-  background:#286BCE;
+  background:var(--blu);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -252,12 +258,12 @@ input[type="checkbox"] {
   gap: 40px;
 }
 .about-content h2{
-  color:#286BCE ;
+  color:var(--blu);
 }
 .about-img{
   width: 450px;
   height:450px;
-  border:10px solid #286BCE;
+  border:10px solid var(--blu);
   border-radius: 40px 70px 30px 30px;
   overflow: hidden;
 }
@@ -324,7 +330,7 @@ p{
 }
 /* #011e30 */
 .html::after {
-  background:  #ffffff;
+  background:var(--color);
   animation: html 4s;
   width: 90%;
 }
@@ -340,7 +346,7 @@ p{
 }
 
 .css::after {
-  background:#ffffff;
+  background:var(--color);
   animation: css 4s;
   width: 80%;
 }
@@ -356,7 +362,7 @@ p{
 }
 
 .Boostrap::after {
-  background:#ffffff;
+  background:var(--color);
   animation: boost 4s;
   width: 60%;
 }
@@ -372,7 +378,7 @@ p{
 }
 
 .JavaScript::after {
-  background:#ffffff;
+  background:var(--color);
   animation: java 4s;
   width: 70%;
 }
@@ -388,7 +394,7 @@ p{
   gap: 5px;
 }
 .porfolio-text h2{
-color:#286BCE;
+color:var(--blu);
 }
 .porfolio-content{
   display: flex;
@@ -462,7 +468,7 @@ margin-top: 22vh;
   color: var(--color);
 }
 .contact-text h2{
-  color:#286BCE;
+  color:var(--blu);
 }
 .info-left a{
   color: var(--color);
@@ -643,17 +649,19 @@ margin-top: 22vh;
   }
   .about-text p{
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 1px;
   }
+  
   .about-img{
     width: 350px;
     height: 380px;
     border-radius: 40px 70px 35px 35px;
 
   }
-  .wide br{
-    display: none;
+  .wide {
+    white-space: nowrap;
+    font-size: 14px;
   }
   .about-img img{
     width: 350px;
@@ -679,12 +687,16 @@ margin-top: 22vh;
     width: 100%;
   }
   .contact-text{
-    margin-left: -125px;
+    margin-left: -90px;
   }
 }
 
 /* the testimomial section */
-
+@media(max-width:763px) and (min-width:601px) {
+  .btn{
+    width: 170px;
+  }
+}
 @media(max-width:768px) and (min-width:601px) {
 
   /* label{
@@ -715,6 +727,9 @@ margin-top: 22vh;
   }
   .btn button{
     width: 362px;
+  }
+  .contact-section{
+    flex-direction: column;
   }
  
 }
