@@ -278,6 +278,9 @@ p{
   font-family: 'Roboto', sans-serif;
   line-height: 25px;
 }
+.none{
+  display: none;
+}
 
 
 
@@ -578,6 +581,12 @@ margin-top: 22vh;
     border-radius: 40px 70px 35px 35px;
 
   }
+  .none{
+    display: block;
+  }
+  .display{
+    display: none;
+  }
   .about-img img{
     width: 350px;
     border-radius:30px 60px 30px 30px ;
@@ -658,6 +667,12 @@ margin-top: 22vh;
     height: 380px;
     border-radius: 40px 70px 35px 35px;
 
+  }
+  .none{
+    display: block;
+  }
+  .display{
+    display: none;
   }
   .wide {
     white-space: nowrap;
