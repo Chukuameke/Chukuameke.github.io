@@ -572,7 +572,7 @@ margin-top: 22vh;
   }
   .about-text p{
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 1px;
   }
   .about-img{
@@ -656,9 +656,10 @@ margin-top: 22vh;
   .about {
     margin-top: 70px;
   }
+  
   .about-text p{
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 1px;
   }
   
@@ -685,7 +686,7 @@ margin-top: 22vh;
 
   /* the porfolio section */
   .porfolio{
-    margin-top: 120px;
+    margin-top: 100px;
   }
   .porfolio-text{
     margin-left: 2px;
@@ -702,7 +703,10 @@ margin-top: 22vh;
     width: 100%;
   }
   .contact-text{
-    margin-left: -90px;
+    margin-left: -65px;
+  }
+  .contact-section{
+    margin-top: 120px;
   }
 }
 
@@ -855,7 +859,7 @@ nav ul li a:before{
  display: none;
 }
 nav{
-  position: sticky;
+  position:fixed;
   top: 0;
 }
 }
