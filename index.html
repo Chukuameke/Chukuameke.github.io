@@ -4,91 +4,81 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>M2</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
-  
-    <!-- Boostrap icons cdn -->
-    <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <!-- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
 </head>
+<style>
+    body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    
 
-<body style="background:var(--bg1); " class="over">
+    .cc-scale {
+        background-image: radial-gradient(circle closest-corner at 180%, #0954f5, rgba(255, 255, 255, 0)), radial-gradient(circle closest-corner at 50% -70%, #fa7979, transparent), radial-gradient(circle closest-corner at 40% -60%, #4fadff, transparent), radial-gradient(circle farthest-side at 190% -130%, #7056f5, transparent);
+        width: 100%;
+        height: 100vh;
 
+    }
 
-    <!-- the navbar section -->
+    h1 {
+        text-align: center;
+        font-size: 80px;
+        font-family: sans-serif;
+        color: #fff;
+        margin-top: 40vh;
+    }
 
-    <!-- <nav>
+    .cc-hero-exp {
+        min-height: 0;
+        width: 100%;
+        height: 100vh !important;
+        color: #fff;
+        background-color: #000;
+        background-image: linear-gradient(170deg, rgba(5, 114, 173, 0) 85%, rgba(14, 14, 14, .98)), radial-gradient(circle at 10% 0, rgba(34, 34, 34, .98), rgba(14, 14, 14, .2) 14%, rgba(14, 14, 14, 0) 48%);
+        flex-direction: column;
 
-        <div class="logo">Mira<span>cle</span></div>
-        <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="porfolio.html">Porfolio</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        /* padding-bottom: 0; */
+        display: flex;
+        overflow: hidden;
+    }
+    /* gradient for card */
 
-    </nav> -->
+    .bg-gradient-9 {
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#8f2df0), to(#ff934f)); */
+    background-image: linear-gradient(90deg, #ff934f,#2d5ef0);
+    height: 100vh !important;
+    height: 100%;
+}
+span{
+    color: white;
+}
 
+</style>
 
-
-    <!-- the banner section -->
-
-    <div class="banner-section" id="home">
-    <video src="./img/background video.mp4" autoplay muted loop="loop" class="background-clip"></video> -->
-        <!-- <img src="./img/Premium Vector _ Geometric hi-tech background.jpeg" class="background-clip" alt=""> -->
-
-        <div class="overlay">
-            <div class="content">
-                <P>Hi There I'm</P>
-                <h2>MICHEAL MIRACLE</h2>
-                <p>I'm <span class="type"></span></p>
-             
-                <div class="banner-btn">
-                    <a href="#" class="btn "><button>Download CV</button></a>
-                
-                    <a href="about.html" class="btn  b"><button>
-                            <p class="explore">Explore</p>
-                        </button></a>
-                </div>
-            </div>
-        </div>
+<body>
+    <div class="cc-hero-exp">
+        <h1>Elevating Digital Experiences through Design and Code</h1>
+        <span id="element"></span>
+        <p>I'm <span class="type"></span></p>
     </div>
+    <div class="cc-scale">
+        <h1>Welcome to Miracle Micheal </h1>
+    </div>
+    <div class="bg-gradient-9">
+        dddd
+    </div>
+    <span id="element"></span>
 
-    <!-- the about section -->
-
-    ->
-
-
-    <!-- the contact section -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.min.map"></script>
-    <script>
-        setTimeout(function () {
-            $('.loader_bg').fadeToggle();
-        }, 1500);
-    </script>
-    <script src="typed.js"></script>
+    <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
     <script>
-        var typed = new Typed('.type', {
+      var typed = new Typed('.type', {
             strings: [
                 'MIRACLE MICHEAL',
                 'WEB DEVELOPER',
@@ -98,20 +88,6 @@
             typeSpeed: 100,
             backSped: 90,
             loop: true
-        });
-    </script>
-
-    <script>
-        var content = document.getElementsByTagName('body')[0];
-        var darkMode = document.getElementById('dark-change');
-        darkMode.addEventListener('click', function () {
-            darkMode.classList.toggle('active');
-            content.classList.toggle('night');
-        })
-    </script>
-    <script>
-        $(window).on("load", function () {
-            $("loader-wrapper").fadeOut("slow");
         });
     </script>
 </body>
