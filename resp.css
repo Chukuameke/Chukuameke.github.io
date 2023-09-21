@@ -5,6 +5,11 @@
 } */
 
 @media(max-width:600px){
+  /* nav */
+  .nav-text1 {
+    margin-left:10px;
+    
+}
   .banner-container{
     text-align: left;
     padding: 0px 5px;
@@ -15,6 +20,7 @@ font-size: 28px;
   br{
     display: none;
   }
+
 
 }
 @media (max-width: 920px) {
@@ -60,3 +66,11 @@ font-size: 28px;
   display:block !important;
 }
   }
+  @media(max-width:1256px){
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 230px; */
+    }
+}

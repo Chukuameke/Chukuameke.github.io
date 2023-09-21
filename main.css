@@ -5,12 +5,14 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 :root {
     --bg: #030415;
     --color: #fff;
-    --pink: #F407FE;
+    --pink: #fe07d5;
+    --pink1:#fe07d5b0;
     --blue: #04a5f6;
     --boder: none;
     --boder-radius: 7px;
@@ -212,6 +214,38 @@ input[type="checkbox"] {
 .none{
     display: none;
 }
+/* navbar section */
+.banner-image{
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+}
+.nav-list{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 250px; */
+}
+.nav-text1{
+    margin-left: 190px;
+    display: grid;
+    gap: 30px;
+}
+.text-gap a{
+    display: grid;
+    gap:5px;
+    color: var(--color);
+}
+.text-gap a h4{
+font-size: 35px;
+}
+.text-gap a h4:hover{
+    background: linear-gradient(90deg,var(--blue),var(--pink));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* banner-section */
 .banner-section{
     color: var(--color);
@@ -232,25 +266,41 @@ input[type="checkbox"] {
     justify-content: center;
 }
 
-@media(max-width:900px) and (min-width:20px) {
-    .toggle-btn i {
-        display: block;
-    }
 
-    .none {
-        display: block;
-    }
-
-    .display{
-        display: none;
-    }
-    .nav-list ul{
-        flex-direction: column;
-        display: none;
-    }
-    .nav-container{
-        gap: 290px;
-        align-items: start;
-        flex-wrap: nowrap;
-    }
+/* main service */
+.main-service-bg{
+    width: 80%;
+    height: 60vh;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+    border-radius: 30px;
 }
+.main-service{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.main-service-text{
+    text-align: center;
+    margin-top: 10vh;
+    display: grid;
+    gap: 10px;
+}
+.service-card{
+    width: 210px;
+    height: 250px;
+    background:var(--color);
+    border-radius:10px;
+    border-bottom: 2px solid var(--pink);
+}
+.main-servicecard{
+    display: flex !important;
+    justify-content: center !important;
+    gap: 30px;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+}
+.card-content{
+    color: var(--bg);
+}
+
+
