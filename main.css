@@ -12,7 +12,7 @@
     --bg: #030415;
     --color: #fff;
     --pink: #fe07d5;
-    --pink1:#fe07d5b0;
+    --pink1: #fe07d5b0;
     --blue: #04a5f6;
     --boder: none;
     --boder-radius: 7px;
@@ -123,12 +123,14 @@ input[type="checkbox"] {
 .none {
     display: none;
 } */
-.nav-container{
+.nav-container {
     width: 80px;
     height: 100vh;
     position: fixed;
     border-right: 1px solid var(--color);
+    z-index: 9999;
 }
+
 .nav-btn button {
     width: 140px;
     height: 40px;
@@ -137,6 +139,7 @@ input[type="checkbox"] {
     background-image: linear-gradient(90deg, var(--blue), var(--pink));
     color: var(--color);
 }
+
 /* .bar{
     width:40px;
     height: 3px;
@@ -201,106 +204,161 @@ input[type="checkbox"] {
     transform: rotate(-45deg);
     transform-origin: left bottom;
 }
-.nav-text{
+
+.nav-text {
     color: var(--color);
     transform: rotate(-90deg);
 }
-.nav-content{
+
+.nav-content {
     display: grid;
     gap: 270px;
     justify-content: center;
     padding: 10px 10px;
 }
-.none{
+
+.none {
     display: none;
 }
+
 /* navbar section */
-.banner-image{
+.banner-image {
     width: 50%;
     height: 100vh;
     background-image: linear-gradient(90deg, var(--blue), var(--pink1));
 }
-.nav-list{
+
+.nav-list {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* gap: 250px; */
 }
-.nav-text1{
+
+.nav-text1 {
     margin-left: 190px;
     display: grid;
     gap: 30px;
 }
-.text-gap a{
+
+.text-gap a {
     display: grid;
-    gap:5px;
+    gap: 5px;
     color: var(--color);
 }
-.text-gap a h4{
-font-size: 35px;
+
+.text-gap a h4 {
+    font-size: 35px;
 }
-.text-gap a h4:hover{
-    background: linear-gradient(90deg,var(--blue),var(--pink));
-    -webkit-background-clip:text;
+
+.text-gap a h4:hover {
+    background: linear-gradient(90deg, var(--blue), var(--pink));
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* banner-section */
-.banner-section{
+.banner-section {
     color: var(--color);
     text-align: center;
     background-color: linear-gradient(90deg, var(--blue), var(--pink));
     padding-top: 30vh;
 }
-.banner-section h1{
+
+.banner-section h1 {
     font-size: 60px;
 }
-.banner-container{
+
+.banner-container {
     display: grid;
     gap: 15px;
 }
-.banner-btn{
+
+.banner-btn {
     display: flex;
     gap: 15px;
     justify-content: center;
 }
 
-
+/* main section2 */
+.main-section2 {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+    margin-top: 500px;
+    position: relative;
+}
+.main-section2-content-bg{
+    width: 80%;
+    height: 70vh;
+    background:#0e0f25;
+    position: absolute;
+    bottom: 80px;
+    border-radius: 10px;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.feature1{
+    width: 70px;
+    height: 60px;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+    text-align: center;
+    margin-top: 5px;
+}
+.features{
+    display: flex;
+    gap: 15px;
+}
+.main-section-img img{
+    width: 300px;
+}
+.main-service-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 30px;
+}
 /* main service */
-.main-service-bg{
+
+.main-service-bg {
     width: 80%;
     height: 60vh;
     background-image: linear-gradient(90deg, var(--blue), var(--pink1));
     border-radius: 30px;
 }
-.main-service{
+
+.main-service {
     display: flex;
     justify-content: center;
     margin-top: 150px;
 }
-.main-service-text{
+
+.main-service-text {
     text-align: center;
     margin-top: 10vh;
     display: grid;
     gap: 10px;
 }
-.service-card{
+
+.service-card {
     width: 210px;
     height: 250px;
-    background:var(--color);
-    border-radius:10px;
+    background: var(--color);
+    border-radius: 10px;
     border-bottom: 2px solid var(--pink);
 }
-.main-servicecard{
+
+.main-servicecard {
     display: flex !important;
     justify-content: center !important;
     gap: 30px;
     margin-top: 15vh;
     flex-wrap: wrap;
 }
-.card-content{
+
+.card-content {
     color: var(--bg);
 }
-
-
