@@ -7,89 +7,60 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='resp.css'>
+    <script src='main.js' defer></script>
+
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<style>
-    body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-    }
-    
 
-    .cc-scale {
-        background-image: radial-gradient(circle closest-corner at 180%, #0954f5, rgba(255, 255, 255, 0)), radial-gradient(circle closest-corner at 50% -70%, #fa7979, transparent), radial-gradient(circle closest-corner at 40% -60%, #4fadff, transparent), radial-gradient(circle farthest-side at 190% -130%, #7056f5, transparent);
-        width: 100%;
-        height: 100vh;
-
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 80px;
-        font-family: sans-serif;
-        color: #fff;
-        margin-top: 40vh;
-    }
-
-    .cc-hero-exp {
-        min-height: 0;
-        width: 100%;
-        height: 100vh !important;
-        color: #fff;
-        background-color: #000;
-        background-image: linear-gradient(170deg, rgba(5, 114, 173, 0) 85%, rgba(14, 14, 14, .98)), radial-gradient(circle at 10% 0, rgba(34, 34, 34, .98), rgba(14, 14, 14, .2) 14%, rgba(14, 14, 14, 0) 48%);
-        flex-direction: column;
-
-        /* padding-bottom: 0; */
-        display: flex;
-        overflow: hidden;
-    }
-    /* gradient for card */
-
-    .bg-gradient-9 {
-    /* background-image: -webkit-gradient(linear, left top, right top, from(#8f2df0), to(#ff934f)); */
-    background-image: linear-gradient(90deg, #ff934f,#2d5ef0);
-    height: 100vh !important;
-    height: 100%;
-}
-span{
-    color: white;
-}
-
-</style>
 
 <body>
-    <div class="cc-hero-exp">
-        <h1>Elevating Digital Experiences through Design and Code</h1>
-        <span id="element"></span>
-        <p>I'm <span class="type"></span></p>
-    </div>
-    <div class="cc-scale">
-        <h1>Welcome to Miracle Micheal </h1>
-    </div>
-    <div class="bg-gradient-9">
-        dddd
-    </div>
-    <span id="element"></span>
+    <!-- nav bar section -->
+    <nav>
 
-    <!-- Load library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed('.type', {
-            strings: [
-                'MIRACLE MICHEAL',
-                'WEB DEVELOPER',
-                'CREATIVE DESIGNER',
-                'FREELANCER'
-            ],
-            typeSpeed: 100,
-            backSped: 90,
-            loop: true
-        });
-    </script>
+        <div class="logo">
+            <img src="./route/Route Logo.png" alt="">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="porfolio.html">Services</a></li>
+                <div class="nav-btn none">
+                    <button class="signin-btn"><a href="sign.html">Sign in</a></button>  
+                </div>
+            </ul>
+            
+        </div>
+        <div class="nav-btn display">
+            <button class="signin-btn"><a href="sign.html">Sign in</a></button>  
+        </div>
+
+    </nav>
+
+    <!-- banner-section -->
+    <div class="banner-section">
+       <div class="banner-container">
+        <h1>Elevating Digital Experiences <br> through Design <br> and Code</h1>
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Id, placeat.</p>
+        <div class="banner-btn nav-btn">
+            <a href="#">
+                <button>Download CV</button>
+            </a>
+            <a href="#">
+                <button>Download CV</button>
+            </a>
+        </div>
+       </div>
+    </div>
 </body>
 
 </html>

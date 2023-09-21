@@ -1,0 +1,110 @@
+/* @media(max-width:1148px) and (min-width:920px){
+    body{
+        display: none;
+    }
+} */
+@media (max-width: 920px) {
+    *{
+      max-width: 100%;
+    }
+    body {
+      font-family: 'Creato Display', sans-serif;
+  
+    }
+  
+    nav .menu-btn i {
+      display: block !important;
+    }
+  
+    #click:checked~.menu-btn i:before {
+      content: "\f00d";
+    }
+    :root {
+      --loginbg: #EEEEEE;
+      --buttonsColor: #F75A0B;
+      --border: none;
+      --color: #fff;
+      --color1: #000;
+      --colorBlue: #00388B;
+      --colorGray: #484848;
+      --lightblue: #D9E1EE;
+      --gray: #D9D9D9;
+      --grayorange: #F0C3AD;
+      --bg3:#00193F;
+  }
+  
+  
+    /* .logo {
+      margin-left: -80px;
+    } */
+  
+    nav ul {
+      position: fixed;
+      top: 60px;
+      left: -100%;
+      background: rgb(255, 255, 255);
+      height: 100vh;
+      width: 80%;
+      text-align:left;
+      padding: 0px 35px;
+      display: block !important;
+      transition: all .5s;
+      justify-content: center;
+      gap: 350px;
+  
+    }
+  
+    nav ul li a:before {
+      align-items: center;
+    }
+  
+    nav ul li a:hover {
+      color: #ffb633;
+      transition: .2s;
+    }
+  
+  
+    #click:checked~ul {
+      left: 0;
+    }
+  
+    nav ul li {
+      width: 100%;
+      margin: 40px 0 !important;
+    }
+  
+    nav ul li a {
+      display: block;
+      font-size: 20px;
+      color: #000000;
+    }
+  
+    nav ul li a {
+      font-size: 18px !important;
+      letter-spacing: 2px;
+  
+    }
+    .signin-btn a {
+      color: var(--color) !important;
+      font-size: 18px !important;
+      
+  }
+  
+    nav ul li a:hover {
+      color: #ffb633;
+      transition: .4s;
+    }
+  
+    nav ul li a:before {
+      display: none;
+    }
+  
+    nav {
+      position: fixed;
+      top: 0;
+    }
+    .signin-btn {
+      background-color: transparent;
+      color: var(--color1);
+  }
+  }

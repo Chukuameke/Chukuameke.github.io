@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg: #030415;
+    --color: #fff;
+    --pink: #F407FE;
+    --blue: #04a5f6;
+    --boder: none;
+    --boder-radius: 7px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+/* nav section */
+nav {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 68px !important;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: var(--color1);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 62px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 0px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.signin-btn a {
+    color: var(--color) !important;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 100%;
+    background: var(--bg);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+nav .menu-btn i {
+    color: var(--color1);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.nav-btn button {
+    width: 140px;
+    height: 40px;
+    border: var(--boder);
+    border-radius: var(--boder-radius);
+    background-image: linear-gradient(90deg, var(--blue), var(--pink));
+    color: var(--color);
+}
+
+.toggle-btn i {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+/* banner-section */
+.banner-section{
+    color: var(--color);
+    text-align: center;
+    background-color: linear-gradient(90deg, var(--blue), var(--pink));
+    padding-top: 30vh;
+}
+.banner-section h1{
+    font-size: 60px;
+}
+.banner-container{
+    display: grid;
+    gap: 15px;
+}
+.banner-btn{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+@media(max-width:900px) and (min-width:20px) {
+    .toggle-btn i {
+        display: block;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .display{
+        display: none;
+    }
+    .nav-list ul{
+        flex-direction: column;
+        display: none;
+    }
+    .nav-container{
+        gap: 290px;
+        align-items: start;
+        flex-wrap: nowrap;
+    }
+}
