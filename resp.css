@@ -76,6 +76,9 @@ font-size: 28px;
     border-top: 2px solid var(--pink);
     border-radius: 10px;
 }
+.service-text h1 {
+  font-size: 35px;
+}
 }
 @media(max-width:600px) and (min-width:400px){
   /* nav */
@@ -133,6 +136,10 @@ font-size: 28px;
     background: var(--lightbg);
     border-top: 2px solid var(--pink);
     border-radius: 10px;
+}
+
+.service-text h1 {
+    font-size: 35px;
 }
 }
 @media (max-width: 920px) {
