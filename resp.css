@@ -47,6 +47,17 @@ font-size: 28px;
   border-radius: 10px;
 }
 
+
+
+
+.main-service-bg {
+    width: 80%;
+    height: 202vh;
+    background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+    border-radius: 30px;
+}
+
+
 }
 @media(max-width:600px) and (min-width:400px){
   /* nav */
@@ -78,6 +89,12 @@ font-size: 28px;
   position: absolute;
   bottom: 80px;
   border-radius: 10px;
+}
+.main-service-bg {
+  width: 80%;
+  height: 202vh;
+  background-image: linear-gradient(90deg, var(--blue), var(--pink1));
+  border-radius: 30px;
 }
 }
 @media (max-width: 920px) {
