@@ -130,6 +130,7 @@ input[type="checkbox"] {
     position: fixed;
     border-right: 1px solid var(--color);
     z-index: 9999;
+    backdrop-filter:blur(10px);
 }
 
 .nav-btn button {
