@@ -40,11 +40,14 @@ font-size: 28px;
 }
 .main-section2-content-bg {
   width: 80%;
-  height: 179vh;
+  height: 140vh;
   background: #0e0f25;
   position: absolute;
   bottom: 80px;
   border-radius: 10px;
+}
+.card-ser{
+  padding: 10px 0px;
 }
 
 
