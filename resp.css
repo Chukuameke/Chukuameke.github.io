@@ -82,7 +82,24 @@ font-size: 28px;
 .service-text h1 {
   font-size: 35px;
 }
+.feature1 p br{
+  display: none !important;
 }
+.none{
+  display: none;
+}
+}
+/* @media(max-width:513px) and (min-width:390px){
+  
+  .main-section2-content-bg {
+    width: 80%;
+    height: 145vh;
+    background: #0e0f25;
+    position: absolute;
+    bottom: 80px;
+    border-radius: 10px;
+}
+} */
 @media(max-width:600px) and (min-width:400px){
   /* nav */
   .nav-text1 {
@@ -108,7 +125,7 @@ font-size: 28px;
 }
 .main-section2-content-bg {
   width: 80%;
-  height: 129vh;
+  height: 119vh !important;
   background: #0e0f25;
   position: absolute;
   bottom: 80px;
@@ -144,6 +161,10 @@ font-size: 28px;
 .service-text h1 {
     font-size: 35px;
 }
+.main-section-img img {
+  width: 210px;
+}
+
 }
 @media (max-width: 920px) {
   :root {
@@ -185,7 +206,7 @@ font-size: 28px;
   display: none;
 }
 .none{
-  display:block !important;
+  display:none !important;
 }
 
 }

@@ -400,14 +400,21 @@ input[type="checkbox"] {
     margin: 35px 10px;
     gap: 10px;
 }
-.cards-service{
+/* .cards-service{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     margin-top:30px;
-}
+} */
 /* .carddd{
     display: grid;
     gap:15px;
 } */
+.carddd{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
