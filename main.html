@@ -7,174 +7,130 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='resp.css'>
-    <script src='main.js'></script>
-
-    <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src='main.js'></script>
 </head>
 
-<body>
-    <!-- nav bar section -->
-    <div class="nav-container">
-        <div class="nav-content">
-            <div class="logo">
-                <h3>Miracle</h3>
-            </div>
-            <div class="hambuger-menu">
-                <a href="index.html">
-                    <div class="menu-button">
-                        <div class="bar">-</div>
-                        <div class="bar">-</div>
-                        <div class="bar">-</div>
-                    </div>
-                </a>
-            </div>
-            <div class="nav-text">
-                <p><b>Coder-Miracle</b></p>
+<body class="">
+    <div class="search">
+        <div class="search-box">
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="search anything" autocomplete="off">
+                <button id="searchBtn">search</button>
             </div>
 
-        </div>
-    </div>
-
-
-    <!-- banner-section -->
-    <div class="banner-section">
-        <div class="banner-container">
-            <h1>Elevating Digital Experiences <br> through Design & Code</h1>
-            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Id, placeat.
-            </p>
-            <div class="banner-btn nav-btn">
-                <a href="#">
-                    <button>Download CV</button>
-                </a>
-                <a href="#" class="boder">
-                    <button>Download CV</button>
-                </a>
+            <div class="result-box">
+                <!-- <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="try.html">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Porfolio</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul> -->
             </div>
         </div>
     </div>
 
+    <script>
+        
 
+//         const availableKeywords = [
+//     { name: "Home", link: "index.html" },
+//     { name: "About", link: "about.html" },
+//     { name: "Portfolio", link: "portfolio.html" },
+//     { name: "Contact", link: "contact.html" }
+// ];
 
-    <div class="main-section2">
-        <div class="section2">
-            <div class="main-section2-content-bg">
-                <div class="main-service-container">
-                    <div class="main-section2-text">
-                        <h2>My Main Features</h2>
-                        <p>I am the best developer in the world</p>
-                        <div class="features">
-                            <div class="feature1">
-                                <h1>01</h1>
-                            </div>
-                            <div>
-                                <h4>Proficiency in Programming Languages</h4>
-                                <p> A web developer should excel in progra <br class="none"> mming languages <br class="display"> like HTML, CSS, and<br class="none"><br class="none">
-                                    JavaScript to create and maintain dynamic <br> and visually appealing websites.
-                                </p>
-                            </div>
-                        </div>
+// const resultBox = document.querySelector(".result-box");
+// const inputBox = document.getElementById("input-box");
+// const searchBtn = document.getElementById("searchBtn");
+// const wrapper = document.querySelector(".search");
 
-                        <div class="features">
-                            <div class="feature1">
-                                <h1>02</h1>
-                            </div>
-                            <div>
-                                <h4>Problem-Solving Skills</h4>
-                                <p> Web developers need to troubleshoot iss <br class="none">ues efficiently, ensuring <br class="display"> websites
-                                    function<br class="none"> flawlessly and delivering a seamless user<br class="none"> experience.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="features">
-                            <div class="feature1">
-                                <h1>03</h1>
-                            </div>
-                            <div>
-                                <h4>Adaptability to Emerging Technologies: </h4>
-                                <p>Keeping up with evolving web technologies<br class="none"> and trends is crucial for web <br class="display">
-                                    developers <br class="none">to stay competitive and deliver cutting-<br class="none">edge solutions to clients.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main-section-img">
-                        <img src="./img/IMG-20230920-WA0109.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- <div class="main-service">
-        <div class="main-service-bg">
-            <div class="main-service-text">
-                <p>Numbers are talking</p>
-                <h2>Our Studio Fact</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Non itaque error tempora quo! Hic
-                    facere
-                    itaque dicta nemo, o</p>
-            </div>
-
-
-            <div class="main-servicecard">
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <h1>icon</h1>
-                        </div>
-                        <div class="card-text55">
-                            <h1>22+</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <h1>icon</h1>
-                        </div>
-                        <div class="card-text55">
-                            <h1>22+</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <h1>icon</h1>
-                        </div>
-                        <div class="card-text55">
-                            <h1>22+</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="card-content">
-                        <div class="card-icon">
-                            <h1>icon</h1>
-                        </div>
-                        <div class="card-text55">
-                            <h1>22+</h1>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
+// inputBox.addEventListener("keyup", (e) => {
+//     let result = [];
+//     let input = inputBox.value.toLowerCase();
+//     if (input.length) {
+//         result = availableKeywords.filter((keyword) => {
+//             return keyword.name.toLowerCase().includes(input);
+//         });
+//     }
     
+//     renderResults(result);
+// });
+
+// function renderResults(result) {
+//     if (!result.length) {
+//         return wrapper.classList.remove("show");
+//     }
+//     let content = result.map((keyword) => {
+//         return `<a href="${keyword.link}"><li>${keyword.name}</li></a>`;
+//     }).join('');
+
+//     wrapper.classList.add("show");
+//     resultBox.innerHTML = `<ul>${content}</ul>`;
+// }
+
+
+const availableKeywords = [
+    { name: "Home", link: "index.html" },
+    { name: "About", link: "about.html" },
+    { name: "Portfolio", link: "portfolio.html" },
+    { name: "Contact", link: "contact.html" }
+];
+
+const resultBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+const searchBtn = document.getElementById("searchBtn"); // Assuming you have a search button with id "searchBtn"
+const wrapper = document.querySelector(".search");
+
+inputBox.addEventListener("keyup", (e) => {
+    let result = [];
+    let input = inputBox.value.toLowerCase();
+    if (input.length) {
+        result = availableKeywords.filter((keyword) => {
+            return keyword.name.toLowerCase().includes(input);
+        });
+    }
+    
+    renderResults(result);
+});
+
+searchBtn.addEventListener("click", () => {
+    let input = inputBox.value.toLowerCase();
+    let pageFound = false;
+    availableKeywords.forEach((keyword) => {
+        if (keyword.name.toLowerCase() === input) {
+            window.location.href = keyword.link;
+            pageFound = true;
+        }
+    });
+    if (!pageFound) {
+        resultBox.innerHTML = "Search not found";
+    }
+});
+
+function renderResults(result) {
+    if (!result.length) {
+        return wrapper.classList.remove("show");
+    }
+    let content = result.map((keyword) => {
+        return `<a href="${keyword.link}"><li>${keyword.name}</li></a>`;
+    }).join('');
+
+    wrapper.classList.add("show");
+    resultBox.innerHTML = `<ul>${content}</ul>`;
+}
+
+
+    </script>
 </body>
+
+</html>
 
 </html>
