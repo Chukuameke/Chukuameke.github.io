@@ -2,135 +2,36 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script defer src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Dev-M2</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script defer src='main.js'></script>
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font link -->
+    <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
+                
 </head>
 
-<body class="">
-    <div class="search">
-        <div class="search-box">
-            <div class="row">
-                <input type="text" name="" id="input-box" placeholder="search anything" autocomplete="off">
-                <button id="searchBtn">search</button>
-            </div>
-
-            <div class="result-box">
-                <!-- <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="try.html">
-                        <li>About</li>
-                    </a>
-                    <a href="#">
-                        <li>Porfolio</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                </ul> -->
-            </div>
-        </div>
+<body>
+  <div class="intro-container">
+    <div class="intro-content">
+      <h1>Welcome to My Website</h1>
+      <p>This is an awesome website with amazing content!</p>
+      <a href="main.html"><button class="start-button">Get Started</button></a>
     </div>
-
-    <script>
-        
-
-//         const availableKeywords = [
-//     { name: "Home", link: "index.html" },
-//     { name: "About", link: "about.html" },
-//     { name: "Portfolio", link: "portfolio.html" },
-//     { name: "Contact", link: "contact.html" }
-// ];
-
-// const resultBox = document.querySelector(".result-box");
-// const inputBox = document.getElementById("input-box");
-// const searchBtn = document.getElementById("searchBtn");
-// const wrapper = document.querySelector(".search");
-
-// inputBox.addEventListener("keyup", (e) => {
-//     let result = [];
-//     let input = inputBox.value.toLowerCase();
-//     if (input.length) {
-//         result = availableKeywords.filter((keyword) => {
-//             return keyword.name.toLowerCase().includes(input);
-//         });
-//     }
-    
-//     renderResults(result);
-// });
-
-// function renderResults(result) {
-//     if (!result.length) {
-//         return wrapper.classList.remove("show");
-//     }
-//     let content = result.map((keyword) => {
-//         return `<a href="${keyword.link}"><li>${keyword.name}</li></a>`;
-//     }).join('');
-
-//     wrapper.classList.add("show");
-//     resultBox.innerHTML = `<ul>${content}</ul>`;
-// }
+  </div>
 
 
-const availableKeywords = [
-    { name: "Home", link: "index.html" },
-    { name: "About", link: "about.html" },
-    { name: "Portfolio", link: "portfolio.html" },
-    { name: "Contact", link: "contact.html" }
-];
 
-const resultBox = document.querySelector(".result-box");
-const inputBox = document.getElementById("input-box");
-const searchBtn = document.getElementById("searchBtn"); // Assuming you have a search button with id "searchBtn"
-const wrapper = document.querySelector(".search");
-
-inputBox.addEventListener("keyup", (e) => {
-    let result = [];
-    let input = inputBox.value.toLowerCase();
-    if (input.length) {
-        result = availableKeywords.filter((keyword) => {
-            return keyword.name.toLowerCase().includes(input);
-        });
-    }
-    
-    renderResults(result);
-});
-
-searchBtn.addEventListener("click", () => {
-    let input = inputBox.value.toLowerCase();
-    let pageFound = false;
-    availableKeywords.forEach((keyword) => {
-        if (keyword.name.toLowerCase() === input) {
-            window.location.href = keyword.link;
-            pageFound = true;
-        }
-    });
-    if (!pageFound) {
-        resultBox.innerHTML = "Search not found";
-    }
-});
-
-function renderResults(result) {
-    if (!result.length) {
-        return wrapper.classList.remove("show");
-    }
-    let content = result.map((keyword) => {
-        return `<a href="${keyword.link}"><li>${keyword.name}</li></a>`;
-    }).join('');
-
-    wrapper.classList.add("show");
-    resultBox.innerHTML = `<ul>${content}</ul>`;
-}
+  
 
 
-    </script>
 </body>
-
-</html>
 
 </html>
