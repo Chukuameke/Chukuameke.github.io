@@ -40,43 +40,6 @@
     <script>
         
 
-//         const availableKeywords = [
-//     { name: "Home", link: "index.html" },
-//     { name: "About", link: "about.html" },
-//     { name: "Portfolio", link: "portfolio.html" },
-//     { name: "Contact", link: "contact.html" }
-// ];
-
-// const resultBox = document.querySelector(".result-box");
-// const inputBox = document.getElementById("input-box");
-// const searchBtn = document.getElementById("searchBtn");
-// const wrapper = document.querySelector(".search");
-
-// inputBox.addEventListener("keyup", (e) => {
-//     let result = [];
-//     let input = inputBox.value.toLowerCase();
-//     if (input.length) {
-//         result = availableKeywords.filter((keyword) => {
-//             return keyword.name.toLowerCase().includes(input);
-//         });
-//     }
-    
-//     renderResults(result);
-// });
-
-// function renderResults(result) {
-//     if (!result.length) {
-//         return wrapper.classList.remove("show");
-//     }
-//     let content = result.map((keyword) => {
-//         return `<a href="${keyword.link}"><li>${keyword.name}</li></a>`;
-//     }).join('');
-
-//     wrapper.classList.add("show");
-//     resultBox.innerHTML = `<ul>${content}</ul>`;
-// }
-
-
 const availableKeywords = [
     { name: "Home", link: "main.html" },
     { name: "About", link: "about.html" },
@@ -90,18 +53,25 @@ const searchBtn = document.getElementById("searchBtn"); // Assuming you have a s
 const wrapper = document.querySelector(".search");
 
 inputBox.addEventListener("keyup", (e) => {
-    let result = [];
-    let input = inputBox.value.toLowerCase();
-    if (input.length) {
-        result = availableKeywords.filter((keyword) => {
-            return keyword.name.toLowerCase().includes(input);
-        });
+    if (e.key === "Enter") {
+        search();
+    } else {
+        let result = [];
+        let input = inputBox.value.toLowerCase();
+        if (input.length) {
+            result = availableKeywords.filter((keyword) => {
+                return keyword.name.toLowerCase().includes(input);
+            });
+        }
+        renderResults(result);
     }
-    
-    renderResults(result);
 });
 
 searchBtn.addEventListener("click", () => {
+    search();
+});
+
+function search() {
     let input = inputBox.value.toLowerCase();
     let pageFound = false;
     availableKeywords.forEach((keyword) => {
@@ -113,7 +83,7 @@ searchBtn.addEventListener("click", () => {
     if (!pageFound) {
         resultBox.innerHTML = "Search not found";
     }
-});
+}
 
 function renderResults(result) {
     if (!result.length) {
@@ -126,7 +96,6 @@ function renderResults(result) {
     wrapper.classList.add("show");
     resultBox.innerHTML = `<ul>${content}</ul>`;
 }
-
 
     </script>
 </body>
