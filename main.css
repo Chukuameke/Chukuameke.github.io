@@ -26,7 +26,7 @@ body {
   padding: 0;
   font-family: "Oswald", sans-serif;
   background-color: var(--bodyColor);
-  overflow-x: hidden;
+
 }
 body.dark{
   --bodyColor:#18191A;
@@ -368,15 +368,12 @@ body.dark .switch::before{
 left: 24px;
 }
 .home{
-  position: relative;
+  position:relative;
   height: 100vh;
-  left: 88px;
-  width: 100%;
-  background-color:transparent;
+  left: 88px ;
+  width:calc(100% - 88px);
+  background-color:blue;
   transition: var(--tran-05);
-  text-align: center;
 }
-/* .sidebar.close ~ .home{
-  left: 88px;
-  width: calc(100% - 88px);
-} */
+
+

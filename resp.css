@@ -23,13 +23,31 @@
   .home{
     position: relative;
     height: 100vh;
-    left: 88px;
+    left: 40px;
     width: calc(100% - 88px);
     background-color:transparent;
     transition: var(--tran-05);
+    text-align: center;
   }
   /* .sidebar.close ~ .home{
     left: 88px;
     width: calc(100% - 88px);
   } */
+
+  .sidebar .toggle{
+    position: absolute;
+    top: 0;
+    right: -25px;
+    transform: translate(-50px);
+    height: 30px;
+    width: 30px;
+    background-color: var(--colorblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--colorwhite);
+    font-size: 22px;
+  }
+  
 }
