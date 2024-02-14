@@ -1,0 +1,42 @@
+@media (max-width: 988px) and (min-width: 100px) {
+  body {
+    display: block;
+  }
+  .sidebar {
+    display: block; /* Hide sidebar by default on mobile devices */
+}
+
+.home {
+    left: 0; /* Reset left position for mobile view */
+    width: 100%; /* Reset width for mobile view */
+}
+
+.sidebar.close ~ .home {
+    left: 0; /* Adjust home section left position for mobile view */
+    width: 100%; /* Adjust home section width for mobile view */
+}
+}
+
+/* Adjust home section for closed sidebar */
+.sidebar.close ~ .home {
+left: 88px;
+width: calc(100% - 88px);
+}
+
+
+.home-text {
+padding-top: 35vh;
+}
+
+.home-text h1 {
+font-size: 4rem;
+font-weight: bolder;
+}
+
+.home-text-span {
+color: var(--colorblue);
+}
+
+.home-text p {
+font-size: 1rem;
+}

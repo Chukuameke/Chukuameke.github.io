@@ -18,172 +18,196 @@
   <!-- font link -->
   <link href="https://fonts.cdnfonts.com/css/mona-sans" rel="stylesheet">
 
+  <!-- google font noto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- google font lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <div class="try">
+    <div class="sidebar  close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <h2> M2 </h2>
+          </span>
+          <div class="text header-text">
+            <span class="name">Dev M2</span>
+            <span class="profession">web||mobile app dev</span>
+          </div>
+        </div>
+        <div class="responsive-nav">
+          <i class="fa-solid fa-chevron-right  toggle"></i>
+      </header>
 
-  <div class="sidebar  close">
-    <header>
-      <div class="image-text">
-        <span class="image">
-          <h2> M2 </h2>
-        </span>
-        <div class="text header-text">
-          <span class="name">Dev M2</span>
-          <span class="profession">web||mobile app dev</span>
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+              <input type="search" placeholder="search.." id="input-box">
+            </a>
+          </li>
+          <ul class="menu-link">
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-house icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-user icon"></i>
+                <span class="text nav-text">About</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-file icon"></i>
+                <span class="text nav-text">Resume</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-briefcase icon"></i>
+                <span class="text nav-text">Porfolio</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-phone icon"></i>
+                <span class="text nav-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="mood-sun">
+              <i class="fa-solid fa-moon icon moon"></i>
+              <i class="fa-solid fa-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mood</span>
+            <div class="toogle-switch" id="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
         </div>
       </div>
-      <i class="fa-solid fa-chevron-right  toggle"></i>
-    </header>
-
-    <div class="menu-bar">
-      <div class="menu">
-        <li class="search-box" >
-          <a href="#">
-            <i class="fa-solid fa-magnifying-glass icon"></i>
-            <input type="search" placeholder="search.." id="input-box">
-          </a>
-        </li>
-        <ul class="menu-link">
-          <li class="nav-link">
-            <a href="#">
-              <i class="fa-solid fa-house icon"></i>
-              <span class="text nav-text">Home</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a href="#">
-              <i class="fa-solid fa-user icon"></i>
-              <span class="text nav-text">About</span>
-            </a>
-          </li>
-
-          <li class="nav-link">
-            <a href="#">
-              <i class="fa-solid fa-file icon"></i>
-              <span class="text nav-text">Resume</span>
-            </a>
-          </li>
-
-          <li class="nav-link">
-            <a href="#">
-              <i class="fa-solid fa-briefcase icon"></i>
-              <span class="text nav-text">Porfolio</span>
-            </a>
-          </li>
-          <li class="nav-link">
-            <a href="#">
-              <i class="fa-solid fa-phone icon"></i>
-              <span class="text nav-text">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="bottom-content">
-        <li class="mode">
-          <div class="mood-sun">
-            <i class="fa-solid fa-moon icon moon"></i>
-            <i class="fa-solid fa-sun icon sun"></i>
-          </div>
-          <span class="mode-text text">Dark Mood</span>
-          <div class="toogle-switch" id="toggle-switch">
-            <span class="switch"></span>
-          </div>
-        </li>
-      </div>
     </div>
 
-    
-  </div>
 
+  </div>
   <section class="home">
     <div class="home-text">
-        <h1>I develop and <span> Bring </span><br> Product To Life</h1>
+      <button class="sidebar-toggle">Toggle Sidebar</button>
+
+      <h1>I develop <span class="home-text-span">and Bring </span><br> Product To Life</h1>
+      <p>Revolutionizing Digital Experiences through Web & Mobile Development <br> with Proven Product Research
+        Expertise</p>
+        
     </div>
-</section>
+  </section>
+
+  </div>
 
 
 
-<script>
-// const body = document.querySelector("body");
-// const sideBar = body.querySelector(".sidebar");
-// const toggle = body.querySelector(".toggle");
-// const searchBtn = body.querySelector(".search-box");
-// const modeSwitchBtn = body.getElementsById("toggle-switch");
-// const modeText = body.querySelector(".mode-text");
+  <script>
+    // const body = document.querySelector("body");
+    // const sideBar = body.querySelector(".sidebar");
+    // const toggle = body.querySelector(".toggle");
+    // const searchBtn = body.querySelector(".search-box");
+    // const modeSwitchBtn = body.getElementsById("toggle-switch");
+    // const modeText = body.querySelector(".mode-text");
 
-// modeSwitchBtn.addEventListener("click", ()=>{
+    // modeSwitchBtn.addEventListener("click", ()=>{
 
-// })
+    // })
 
-document.addEventListener("DOMContentLoaded", function() {
-  const body = document.querySelector("body");
-  const modeSwitchBtn = document.querySelector(".mode");
-  const moonIcon = document.querySelector(".moon");
-  const sunIcon = document.querySelector(".sun");
-  const modeText = document.querySelector(".mode-text");
-  const toggle = document.querySelector(".image");
-  const sideBar = document.querySelector(".sidebar");
-const toogleBtn = document.getElementById("toogle-btn");
+    document.addEventListener("DOMContentLoaded", function () {
+      const body = document.querySelector("body");
+      const modeSwitchBtn = document.querySelector(".mode");
+      const moonIcon = document.querySelector(".moon");
+      const sunIcon = document.querySelector(".sun");
+      const modeText = document.querySelector(".mode-text");
+      const toggle = document.querySelector(".image");
+      const sideBar = document.querySelector(".sidebar");
+      const toogleBtn = document.getElementById("toogle-btn");
+      const menuBar = document.querySelector("sidebar-toggle");
 
-
-
-
-  toggle.addEventListener("click",function(){
-    sideBar.classList.toggle("close");
-  })
-
-  modeSwitchBtn.addEventListener("click", function() {
-    body.classList.toggle("dark");
-    if (body.classList.contains("dark")) {
-      moonIcon.style.opacity = "1";
-      sunIcon.style.opacity = "0";
-      modeText.textContent = "Light Mode";
-    } else {
-      moonIcon.style.opacity = "0";
-      sunIcon.style.opacity = "1";
-      modeText.textContent = "Dark Mode";
-    }
-  });
-});
+menuBar.addEventListener("click", function(){
+  console.log("jjjj");
+})
+      
 
 
+      toggle.addEventListener("click", function () {
+        menuBar.classList.toggle("hide");
+      })
 
-const availableKeywords = [
-    { name: "Home", link: "index.html" },
-    { name: "About", link: "about.html" },
-    { name: "Portfolio", link: "portfolio.html" },
-    { name: "Contact", link: "contact.html" }
-];
-
-const inputBox = document.getElementById("input-box");
-const searchBtn = document.getElementById("searchBtn"); // Assuming you have a search button with id "searchBtn"
-
-inputBox.addEventListener("keyup", (e) => {
-    if (e.key === "Enter") {
-        search();
-    }
-});
-
-searchBtn.addEventListener("click", () => {
-    search();
-});
-
-function search() {
-    let input = inputBox.value.toLowerCase();
-    let pageFound = false;
-    availableKeywords.forEach((keyword) => {
-        if (keyword.name.toLowerCase() === input) {
-            window.location.href = keyword.link;
-            pageFound = true;
+      modeSwitchBtn.addEventListener("click", function () {
+        body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          moonIcon.style.opacity = "1";
+          sunIcon.style.opacity = "0";
+          modeText.textContent = "Light Mode";
+        } else {
+          moonIcon.style.opacity = "0";
+          sunIcon.style.opacity = "1";
+          modeText.textContent = "Dark Mode";
         }
+      });
     });
-    if (!pageFound) {
-        console.log("Search not found"); // You can optionally provide feedback that the search term was not found
-    }
-}
 
-</script>
+
+
+    const availableKeywords = [
+      { name: "Home", link: "index.html" },
+      { name: "About", link: "about.html" },
+      { name: "Portfolio", link: "portfolio.html" },
+      { name: "Contact", link: "contact.html" }
+    ];
+
+    const inputBox = document.getElementById("input-box");
+    const searchBtn = document.getElementById("searchBtn"); // Assuming you have a search button with id "searchBtn"
+
+    inputBox.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+        search();
+      }
+    });
+
+    searchBtn.addEventListener("click", () => {
+      search();
+    });
+
+    function search() {
+      let input = inputBox.value.toLowerCase();
+      let pageFound = false;
+      availableKeywords.forEach((keyword) => {
+        if (keyword.name.toLowerCase() === input) {
+          window.location.href = keyword.link;
+          pageFound = true;
+        }
+      });
+      if (!pageFound) {
+        console.log("Search not found"); // You can optionally provide feedback that the search term was not found
+      }
+    }
+
+  </script>
 </body>
 
 </html>
