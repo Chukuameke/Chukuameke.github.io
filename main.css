@@ -369,7 +369,7 @@ left: 24px;
   height: 100vh;
   left: 88px;
   width: 100%;
-  background-color: #007bff;
+  background-color:transparent;
   transition: var(--tran-05);
   text-align: center;
 }
