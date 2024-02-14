@@ -3,7 +3,7 @@
     display: block;
   }
   .sidebar {
-    display: block; /* Hide sidebar by default on mobile devices */
+    display:none; /* Hide sidebar by default on mobile devices */
 }
 
 .home {
@@ -39,4 +39,7 @@ color: var(--colorblue);
 
 .home-text p {
 font-size: 1rem;
+}
+.hide{
+  display:block;
 }

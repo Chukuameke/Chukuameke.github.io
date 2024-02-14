@@ -111,12 +111,13 @@
   </div>
   <section class="home">
     <div class="home-text">
-      <button class="sidebar-toggle">Toggle Sidebar</button>
-
+      <div>
+        <button class="sidebar-toggle">Toggle Sidebar</button>
+      </div>
       <h1>I develop <span class="home-text-span">and Bring </span><br> Product To Life</h1>
       <p>Revolutionizing Digital Experiences through Web & Mobile Development <br> with Proven Product Research
         Expertise</p>
-        
+
     </div>
   </section>
 
@@ -145,12 +146,14 @@
       const toggle = document.querySelector(".image");
       const sideBar = document.querySelector(".sidebar");
       const toogleBtn = document.getElementById("toogle-btn");
-      const menuBar = document.querySelector("sidebar-toggle");
-
-menuBar.addEventListener("click", function(){
-  console.log("jjjj");
-})
+      const menuBar = document.querySelector(".sidebar-toggle"); // Corrected selector to target element with class "sidebar-toggle"
       
+
+      menuBar.addEventListener("click", function () {
+        sideBar.classList.toggle("hide");
+      });
+
+
 
 
       toggle.addEventListener("click", function () {
