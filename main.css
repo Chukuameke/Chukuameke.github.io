@@ -178,7 +178,10 @@ transition: var(--tran-04);
   display: grid;
   text-align: center;
 }
-
+/* navbar section */
+.image{
+  cursor: pointer;
+}
 .image-text h2 {
   width: 50px;
   height: 50px;
@@ -201,12 +204,12 @@ transition: var(--tran-04);
   z-index: 1000;
 }
 /* close and open bar */
-/* .sidebar.close{
+.sidebar.close{
   width: 88px;
 }
 .sidebar.close .text{
   opacity:0;
-} */
+}
 /* resuseable code */
 /* display none for laptop */
 .fa-chevron-right{
@@ -370,10 +373,20 @@ left: 24px;
 .home{
   position:relative;
   height: 100vh;
-  left: 88px ;
-  width:calc(100% - 88px);
-  background-color:blue;
+  left: 250px ;
+  width:calc(100% - 250px);
+  background-color:transparent;
   transition: var(--tran-05);
+  text-align: center;
 }
+  .sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
+  }
 
-
+  .home-text{
+    padding-top: 40vh;
+  }
+  .home-text h1{
+    font-size:40px;
+  }
