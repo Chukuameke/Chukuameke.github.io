@@ -15,7 +15,7 @@
     left: 0; /* Adjust home section left position for mobile view */
     width: 100%; /* Adjust home section width for mobile view */
 }
-}
+
 
 /* Adjust home section for closed sidebar */
 .sidebar.close ~ .home {
@@ -42,4 +42,20 @@ font-size: 1rem;
 }
 .hide{
   display:block;
+}
+
+.sidebar-toggle{
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding:5px 10px;
+  background-color: transparent;
+  border: 0;
+  opacity: 1 !important;
+}
+.sidebar-toggle i{
+  font-size: 30px;
+}
+
 }

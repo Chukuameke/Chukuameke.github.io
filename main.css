@@ -404,3 +404,9 @@ left: 24px;
   font-size: 1rem;
 }
 
+.nav-display-none{
+  display: none !important;
+}
+.sidebar-toggle{
+  opacity: 0;
+}
