@@ -2,6 +2,19 @@
   body {
     display: block;
   }
+  :root {
+    --color: #000;
+    --colorblue: #0090e1;
+    --colororange: #e4b02c;
+    --colorwhite: #fff;
+    --colorhover: #e9f3ff;
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    --bodyColor:#E4E9F7;
+    --sidebarColor:#fff;
+  }
   .sidebar {
     display:none; /* Hide sidebar by default on mobile devices */
 }
@@ -54,9 +67,11 @@ font-size: 1rem;
   border: 0;
   outline: 0;
   opacity: 1 !important;
+  
 }
 .sidebar-toggle i{
   font-size: 30px;
+  color: var(--color);
 }
 
 }
