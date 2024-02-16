@@ -468,3 +468,9 @@ left: 24px;
   text-align: left !important;
   padding: 0px 40px;
 }
+
+/* resume section */
+.resume-board{
+  width: 68%;
+  height:50vh;
+}
