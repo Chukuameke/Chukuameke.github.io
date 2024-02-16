@@ -21,6 +21,10 @@
   justify-content:left;
   padding: 10px 0px;
 }
+/* about */
+.about-board{
+  width: 90%;
+}
 }
 
 @media (max-width: 768px) {

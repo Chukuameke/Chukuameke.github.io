@@ -30,6 +30,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 
 <body>
@@ -129,22 +131,27 @@
             <div class="about-board">
                 <div class="profile-details">
                     <div>
-                        <img src="./img/1707308168710.JPG" alt="" class="profile-img">
+                        <img src="./img/New Project (2).png" alt="" class="profile-img">
                     </div>
                     <div class="profile-text">
-                       <div>
-                        <h2>Miracle Micheal
-                        </h2>
-                       </div>
+                        <div>
+                            <h2>Miracle Micheal
+                            </h2>
+                        </div>
                         <div>
                             <p>Web/Mobile App developer||</p>
-                            
+
                         </div>
                         <div>
                             <p>Product Researcher</p>
                         </div>
                     </div>
                 </div>
+
+                <div id="typed-text"></div>
+               
+                
+                
             </div>
         </div>
     </section>
@@ -152,4 +159,25 @@
     </div>
 
 
+
+    <script>
+        // Array of text lines you want to type
+        const textLines = [
+            "miracle bnkjsdhfbj,dhgjhfgkyuhkfdjkh miracle <br> bjdhjgkjyhrgkhgkwydghksdhkdjhgfksdhxzcbhdhxkshd <br> vhmbhjhdahguchdsjjhsjdfgksdjfdjktygkasyudgkdhgkdgkhk <br> jzhkbndhgadhskhgdfshk,hjhdhjhfgkhsdhjhGAHGSekgfgjzbndbghdsgjjkjl <br> kJKhzxghsgaVxchzgvxhgcGFZXgdgfjhsvkdfkbjkfjlzjkhbjbcjhx",
+            "",
+            ""
+        ];
+
+        const typed = new Typed('#typed-text', {
+            strings: textLines,
+            typeSpeed: 50, // Speed of typing in milliseconds
+            backSpeed: 10000, // Speed of deleting in milliseconds
+            loop: true, // Whether to loop through the text or not
+            onComplete: function () {
+                // After Typed.js completes, display additional content
+                document.getElementById('additional-content').style.display = 'block';
+                console.log('Typed text complete');
+            }
+        });
+    </script>
 </body>
