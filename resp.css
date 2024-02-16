@@ -23,8 +23,13 @@
 }
 /* about */
 .about-board{
-  width: 90% !important;
+  width: 83% !important;
 }
+#typed-text{
+  text-align: left !important;
+  padding: 15px 30px;
+}
+
 }
 
 @media (max-width: 768px) {
