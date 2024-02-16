@@ -34,9 +34,9 @@
 
 <body>
   <div class="nav-display-none">
-    
+
     <i class="fa-solid fa-bars "></i>
-   
+
   </div>
   <div class="try">
     <div class="sidebar  close">
@@ -64,13 +64,13 @@
           </li>
           <ul class="menu-link">
             <li class="nav-link">
-              <a href="#">
+              <a href="index.html">
                 <i class="fa-solid fa-house icon"></i>
                 <span class="text nav-text">Home</span>
               </a>
             </li>
             <li class="nav-link">
-              <a href="#">
+              <a href="about.html">
                 <i class="fa-solid fa-user icon"></i>
                 <span class="text nav-text">About</span>
               </a>
@@ -122,7 +122,10 @@
       <h1>I develop <span class="home-text-span">and Bring </span><br> Product To Life</h1>
       <p>Revolutionizing Digital Experiences through Web & Mobile Development <br> with Proven Product Research
         Expertise</p>
-
+      <div class="home-btn">
+       <button>Explore</button>
+       <button>Download CV</button>
+      </div>
     </div>
   </section>
 
@@ -152,7 +155,7 @@
       const sideBar = document.querySelector(".sidebar");
       const toogleBtn = document.getElementById("toogle-btn");
       const menuBar = document.querySelector(".sidebar-toggle"); // Corrected selector to target element with class "sidebar-toggle"
-      
+
 
       menuBar.addEventListener("click", function () {
         sideBar.classList.toggle("hide");
