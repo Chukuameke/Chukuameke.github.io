@@ -29,7 +29,10 @@
   text-align: left !important;
   padding: 15px 30px;
 }
-
+.resume-board{
+  width: 68%;
+  height:80vh;
+}
 }
 
 @media (max-width: 768px) {

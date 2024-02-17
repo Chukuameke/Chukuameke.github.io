@@ -391,7 +391,7 @@ left: 24px;
   }
 
   .home-text{
-    padding-top: 30vh;
+    padding-top: 27vh;
   }
   .home-text h1{
     font-size:4rem;
@@ -419,9 +419,12 @@ left: 24px;
 }
 .home-btn{
   display: flex;
-  gap: 20px;
   justify-content: center;
   padding: 10px 0px;
+}
+.home-btn button{
+  margin: 0px 10px;
+  cursor: pointer;
 }
 
 /* about section */
@@ -473,4 +476,37 @@ left: 24px;
 .resume-board{
   width: 68%;
   height:50vh;
+}
+.resume-img img{
+  width: 180px;
+
+}
+.resume-text{
+text-align: center;
+color: var(--color);
+}
+.resume-btn button{
+width: 200px;
+height: 40px;
+border-radius:20px;
+border: 2px solid var(--colorblue);
+background-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+gap:10px;
+color: var(--color);
+}
+.resume-btn{
+  display: grid;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.resume-btn i{
+  font-size: 18px;
+}
+.resume-btn button:hover{
+  background-color: var(--colorblue);
+  color: var(--colorwhite);
+  transition:var(--tran-04);
 }
