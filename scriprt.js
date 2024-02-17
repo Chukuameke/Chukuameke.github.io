@@ -68,6 +68,7 @@ const availableKeywords = [
     { name: "Home", link: "index.html" },
     { name: "About", link: "about.html" },
     { name: "Portfolio", link: "portfolio.html" },
+    { name: "Portfolio", link: "resume.html" },
     { name: "Contact", link: "contact.html" }
 ];
 
