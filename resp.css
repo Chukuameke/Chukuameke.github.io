@@ -33,6 +33,13 @@
   width: 68%;
   height:80vh;
 }
+.bottom-content{
+  padding-bottom: 40px;
+}
+.home-btn button{
+  margin: 0px 2px;
+  cursor: pointer;
+}
 }
 
 @media (max-width: 768px) {

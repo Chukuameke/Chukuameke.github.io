@@ -466,10 +466,12 @@ left: 24px;
 .profile-text{
   display: grid;
   text-align: left;
+  color: var(--color);
 }
 #typed-text{
   text-align: left !important;
   padding: 0px 40px;
+  color: var(--color);
 }
 
 /* resume section */
@@ -523,4 +525,11 @@ color: var(--color);
 }
 .resume-container{
   padding: 30px 0px;
+}
+/* navbar-menu */
+.fa-bars{
+  color: var(--color)!important;
+}
+.fa-bars:hover{
+  color: var(--color) !important;
 }
