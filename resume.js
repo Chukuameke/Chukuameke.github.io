@@ -22,18 +22,35 @@ document.addEventListener("DOMContentLoaded", function () {
         menuBar.classList.toggle("hide");
     })
 
-    modeSwitchBtn.addEventListener("click", function () {
-        body.classList.toggle("dark");
-        if (body.classList.contains("dark")) {
-            moonIcon.style.opacity = "1";
-            sunIcon.style.opacity = "0";
-            modeText.textContent = "Light Mode";
-        } else {
-            moonIcon.style.opacity = "0";
-            sunIcon.style.opacity = "1";
-            modeText.textContent = "Dark Mode";
-        }
-    });
+ // Function to toggle mode
+function toggleMode() {
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+        moonIcon.style.opacity = "1";
+        sunIcon.style.opacity = "0";
+        modeText.textContent = "Light Mode";
+        // Save mode to local storage
+        localStorage.setItem("mode", "dark");
+    } else {
+        moonIcon.style.opacity = "0";
+        sunIcon.style.opacity = "1";
+        modeText.textContent = "Dark Mode";
+        // Save mode to local storage
+        localStorage.setItem("mode", "light");
+    }
+}
+
+// Event listener for mode switch button
+modeSwitchBtn.addEventListener("click", toggleMode);
+
+// Check local storage for saved mode on page load
+window.addEventListener("load", () => {
+    const savedMode = localStorage.getItem("mode");
+    if (savedMode === "dark") {
+        toggleMode(); // Apply dark mode if saved mode is dark
+    }
+});
+
 });
 
 
