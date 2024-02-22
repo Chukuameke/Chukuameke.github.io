@@ -396,12 +396,14 @@ left: 24px;
   .home-text h1{
     font-size:4rem;
     font-weight:bolder;
+    color: var(--color);
   }
 .home-text-span{
   color: var(--colorblue);
 }
 .home-text p{
   font-size: 1rem;
+  color: var(--color);
 }
 
 .nav-display-none{
@@ -425,6 +427,12 @@ left: 24px;
 .home-btn button{
   margin: 0px 10px;
   cursor: pointer;
+}
+.home-btn button:hover{
+  transition: var(--tran-04);
+  background-color:transparent;
+  border: 2px solid var(--colorblue);
+  color: var(--color);
 }
 
 /* about section */
@@ -532,4 +540,6 @@ color: var(--color);
 }
 .fa-bars:hover{
   color: var(--color) !important;
+  outline: 0;
+  border: 0;
 }
