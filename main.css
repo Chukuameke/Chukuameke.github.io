@@ -543,3 +543,46 @@ color: var(--color);
   outline: 0;
   border: 0;
 }
+.form form{
+  display: grid !important;
+  width: 50%;
+  gap: 20px;
+}
+
+
+.form input{
+  width: 300px;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid var(--color);
+  outline: 0;
+  background-color: transparent;
+  color: var(--color);
+
+}
+.contact-btn{
+  width: 300px;
+  height: 40px; 
+  background-color: var(--colorblue);
+  color: var(--colorwhite);
+  border: 0;
+  outline: 0;
+
+}
+.contact-info{
+  display: flex !important;
+  justify-content:space-between;
+  padding: 20px 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-text{
+  text-align: right;
+  color: var(--color);
+}
+.contact-text span{
+  color: var(--colorblue);
+}
+.contact-board{
+  height: auto;
+}
