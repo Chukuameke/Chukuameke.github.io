@@ -1,22 +1,24 @@
-@media(max-width:392px) and (min-width:100px){
- .contact-board{
-  position: relative;
- }
-  .contact-info{
-    padding:0;
-    justify-content: left !important;
-    position: absolute;
-    left: 0;
-    
+@media screen and (max-width: 600px) {
+  .container {
+      padding: 10px;
   }
-  .width{
-    width:100% !important;
+
+  .input-group label {
+      font-size: 0.8em;
   }
-  .contact-btn {
-    width: 200px;
+
+  .input-group input, .input-group textarea {
+      width: 100%; /* Full width on smaller screens */
+      padding: 8px;
   }
- 
+
+  .contact-btn{
+      width: 100%; /* Full width on smaller screens */
+      font-size: 0.9em;
+      padding: 8px;
+  }
 }
+
 
 @media (max-width: 600px) and (min-width:100px) {
   body{
