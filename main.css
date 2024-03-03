@@ -548,7 +548,7 @@ color: var(--color);
   margin: 50px auto;
   margin-top:-10px;
   padding: 20px;
-  background-color: #fff;
+  background-color:var(--colorwhite);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center; /* Align content to center */
@@ -573,7 +573,7 @@ form h2 {
 .input-group input, .input-group textarea {
   width: 60%; /* Reduce width to 40% */
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--colorwhite);
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -586,8 +586,8 @@ form h2 {
 .contact-btn{
   width: 60%; /* Reduce width to 40% */
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--colorblue);
+  color: var(--colorwhite);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -595,17 +595,19 @@ form h2 {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color:var(--colorblue);
 }
 .input-group input{
   border: none;
   border-bottom: 1px solid var(--color);
   outline: none;
   border-radius: 0;
+  background-color: transparent;
 }
 #message{
   border: 0;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--color);
   outline: 0;
   border-radius: 0;
+  background-color: transparent;
 }
