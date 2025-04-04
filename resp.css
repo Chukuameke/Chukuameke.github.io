@@ -22,7 +22,7 @@
 
 @media (max-width: 600px) and (min-width:100px) {
   body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 .home-text{
   text-align: left;
@@ -65,6 +65,16 @@
 .contact-text{
   text-align:left !important;
 }
+.container44 {
+  max-width: 90%;
+  margin: 50px auto;
+  margin-top: -10px;
+  padding: 20px;
+  background-color: var(--colorwhite);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 }
 @media(max-width:892px) and (min-width:100px){
   .contact-info{
@@ -104,6 +114,7 @@
 .home {
     left: 0; /* Reset left position for mobile view */
     width: 100%; /* Reset width for mobile view */
+
 }
 
 .sidebar.close ~ .home {
