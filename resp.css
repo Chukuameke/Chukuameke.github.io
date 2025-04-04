@@ -75,6 +75,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.resume-container {
+    padding: 30px 11px;
+}
 }
 @media(max-width:892px) and (min-width:100px){
   .contact-info{
@@ -83,6 +86,7 @@
   .contact-text{
     text-align: center;
   }
+
 }
 @media (max-width: 768px) {
   .home-text h1 {
